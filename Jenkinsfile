@@ -23,13 +23,13 @@ node{
                )
 '''
    }*/
-   /*
+   
    stage('Deploy to Tomcat'){
-     bat " \\JenkinsWar.war \"${tomcatWeb}\\JenkinsWar.war\""
+     bat " C:\\Program Files\\Jenkins\\Jenkins.war" \"C:\\Program Files\\Apache Software Foundation\\Tomcat 7.0_Tomcat7\\webapps\\"
    }
       stage ('Start Tomcat Server') {
          sleep(time:5,unit:"SECONDS") 
          bat "${tomcatBin}\\startup.bat"
          sleep(time:100,unit:"SECONDS")
-   }*/
+   }
 }
