@@ -25,7 +25,7 @@ node{
    }*/
    
    stage('Deploy to Tomcat'){
-     bat " C:\\Program Files\\Jenkins\\Jenkins.war" \"C:\\Program Files\\Apache Software Foundation\\Tomcat 7.0_Tomcat7\\webapps\\"
+     bat " C:\\Program Files\\Jenkins\\Jenkins.war "
    }
       stage ('Start Tomcat Server') {
          sleep(time:5,unit:"SECONDS") 
